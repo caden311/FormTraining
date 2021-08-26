@@ -1,0 +1,44 @@
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: whitesmoke;
+    height: 60px;
+    margin-bottom: 1em;
+    color: #673ab7;
+    box-shadow: 0px 0px 3px 2px darkgrey;
+}
+
+.form1 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    max-width: 500px;
+    margin: auto;
+    mat-form-field {
+        min-width: 25%;
+    }
+
+    .save-button {
+        margin-top: 1em;
+    }
+
+    .contacts {
+        button {
+            margin: 1em 0;
+        }
+        .contact {
+            border: 1px solid lightgray;
+            border-radius: 9px;
+            background-color: whitesmoke;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 1em;
+            mat-form-field {
+                margin: .5em .3em;
+            }
+        }
+    }
+   
+}

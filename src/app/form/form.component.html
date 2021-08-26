@@ -1,0 +1,12 @@
+
+<div class="header"><h2>Reactive Forms</h2></div>
+
+<form class="form1" [formGroup]="form1" (ngSubmit)="saveForm()">
+    <h4>Basic Info</h4>
+
+
+    <button class="save-button" mat-flat-button color="primary" type="submit" [disabled]="!form1.valid">Save</button>
+    <div>
+        <pre style="text-align: left;">{{form1.getRawValue() | json}}</pre>
+    </div>
+</form>
