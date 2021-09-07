@@ -30,6 +30,7 @@ export class SolutionComponent implements OnInit, OnDestroy {
       }
     }));
     this.initFormBuilder();
+ 
     // this.initManually();
 
   }
@@ -55,6 +56,8 @@ export class SolutionComponent implements OnInit, OnDestroy {
     // Subscribe to all changes to form..
     this.form1.valueChanges.subscribe(val => {
     });
+    this.form1.controls.name.valueChanges.subscribe((name) => {
+    })
   }
 
   private initManually() {
